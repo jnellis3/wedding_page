@@ -42,6 +42,7 @@ input {
 }
 
 .site-header {
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid rgba(216, 206, 192, 0.9);
   border-radius: 8px;
@@ -51,7 +52,9 @@ input {
 
 .hero-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
   display: block;
 }
 
