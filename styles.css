@@ -166,6 +166,13 @@ input {
   line-height: 1.5;
 }
 
+.timeline-note {
+  margin-top: 0.65rem;
+  border-left: 3px solid var(--rose);
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+
 .search-form {
   display: grid;
   gap: 0.45rem;
