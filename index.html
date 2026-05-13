@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f5ef">
+    <title>Jacob & Julia | Wedding Day</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="site-header">
+        <div class="header-art" aria-hidden="true">
+          <img src="assets/venue-terrace.svg" alt="">
+        </div>
+        <div class="header-copy">
+          <p class="date-line">June 12, 2026</p>
+          <h1>Jacob & Julia</h1>
+          <p class="venue-line">The Madison Club</p>
+        </div>
+      </header>
+
+      <nav class="section-tabs" aria-label="Wedding day sections">
+        <button class="tab-button is-active" type="button" data-target="itinerary" aria-controls="itinerary" aria-selected="true">
+          Itinerary
+        </button>
+        <button class="tab-button" type="button" data-target="seating" aria-controls="seating" aria-selected="false">
+          Find My Table
+        </button>
+      </nav>
+
+      <section class="content-section is-active" id="itinerary" aria-labelledby="itinerary-title">
+        <div class="section-heading">
+          <p class="eyebrow">Wedding Day</p>
+          <h2 id="itinerary-title">Itinerary</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <time datetime="2026-06-12T16:30">4:30 PM</time>
+            <div>
+              <h3>Ceremony</h3>
+              <p>Join us as we exchange vows.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2026-06-12T17:00">5:00 PM</time>
+            <div>
+              <h3>Cocktail Hour</h3>
+              <p>Drinks, hors d'oeuvres, and time to mingle.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2026-06-12T18:00">6:00 PM</time>
+            <div>
+              <h3>Reception</h3>
+              <p>Dinner, dancing, and celebration until midnight.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="content-section" id="seating" aria-labelledby="seating-title" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Seating Chart</p>
+          <h2 id="seating-title">Find Your Table</h2>
+        </div>
+
+        <form class="search-form" role="search">
+          <label for="guest-search">Guest name</label>
+          <input id="guest-search" name="guest-search" type="search" autocomplete="off" placeholder="Start typing your name">
+        </form>
+
+        <div class="results-status" id="results-status" aria-live="polite">
+          Start typing to look up your table.
+        </div>
+
+        <div class="results-list" id="results-list"></div>
+      </section>
+    </main>
+
+    <script src="guests.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
