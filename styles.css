@@ -179,6 +179,33 @@ input {
   font-weight: 600;
 }
 
+.timeline-details,
+.event-details ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.75rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.timeline-details strong {
+  color: var(--ink);
+}
+
+.event-details {
+  margin-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.event-details h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
 .search-form {
   display: grid;
   gap: 0.45rem;
