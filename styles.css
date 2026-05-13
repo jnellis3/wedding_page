@@ -166,6 +166,12 @@ input {
   line-height: 1.5;
 }
 
+.timeline-location {
+  color: var(--sage);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .timeline-note {
   margin-top: 0.65rem;
   border-left: 3px solid var(--rose);
