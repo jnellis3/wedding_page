@@ -13,8 +13,8 @@ window.WEDDING_GUESTS = [
   { name: "Spencer Nellis", table: "1", party: "Nellis" },
   { name: "Marius Facktor", table: "1", party: "Facktor" },
   { name: "Steven Baldwin", table: "1", party: "Baldwin" },
-  { name: "Julia (Bride) Nellis", table: "1", party: "Nellis" },
-  { name: "Jacob (Groom) Nellis", table: "1", party: "Nellis" },
+  { name: "Julia Nellis", table: "1", party: "Nellis" },
+  { name: "Jacob Nellis", table: "1", party: "Nellis" },
   { name: "Chad Strelow", table: "2", party: "Strelow" },
   { name: "Heidi Strelow", table: "2", party: "Strelow" },
   { name: "Grace Strelow", table: "2", party: "Strelow" },
@@ -174,5 +174,5 @@ window.WEDDING_GUESTS = [
   { name: "Travis Baughman", table: "14", party: "Baughman" },
   { name: "Doug Ogden - Celebrations Entertainment", table: "15", party: "Vendor" },
   { name: "Dave - Twig & Olive Photography", table: "15", party: "Vendor" },
-  { name: "Adam (Videographer) Maciejewski", table: "15", party: "Vendor" }
+  { name: "Adam Maciejewski - Videographer", table: "15", party: "Vendor" }
 ];
