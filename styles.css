@@ -71,7 +71,7 @@ input {
   top: 0;
   z-index: 5;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.4rem;
   margin: 1rem 0;
   padding: 0.35rem;
@@ -81,19 +81,30 @@ input {
   backdrop-filter: blur(14px);
 }
 
-.tab-button {
+.tab-button,
+.tab-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 3rem;
   border: 0;
   border-radius: 6px;
   background: transparent;
   color: var(--muted);
   font-weight: 700;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .tab-button.is-active {
   background: var(--ink);
   color: var(--white);
+}
+
+.tab-link:hover,
+.tab-link:focus-visible {
+  color: var(--ink);
 }
 
 .content-section {
@@ -289,6 +300,103 @@ input {
   text-transform: uppercase;
 }
 
+.qr-shell {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.qr-header {
+  display: grid;
+  gap: 0.4rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.qr-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 12vw, 4.2rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.qr-header p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.qr-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.qr-panel {
+  display: grid;
+  gap: 0.9rem;
+  justify-items: center;
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.92);
+  text-align: center;
+}
+
+.qr-panel h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+}
+
+.qr-image {
+  width: min(100%, 19rem);
+  aspect-ratio: 1;
+  padding: 0.65rem;
+  border: 1px solid rgba(216, 206, 192, 0.9);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qr-url {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.qr-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.qr-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7rem;
+  min-height: 2.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--white);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.qr-action:hover,
+.qr-action:focus-visible {
+  background: var(--sage);
+}
+
 @media (min-width: 42rem) {
   .app-shell {
     padding: 2rem;
@@ -296,5 +404,72 @@ input {
 
   .content-section {
     padding: 1.5rem;
+  }
+
+  .qr-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.35in;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .app-shell {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .qr-shell {
+    gap: 0.25in;
+  }
+
+  .qr-header {
+    padding: 0;
+  }
+
+  .qr-header h1 {
+    font-size: 32pt;
+  }
+
+  .qr-header p:last-child,
+  .qr-actions {
+    display: none;
+  }
+
+  .qr-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25in;
+  }
+
+  .qr-panel {
+    break-inside: avoid;
+    padding: 0.2in;
+    border-color: #bbb;
+    background: #fff;
+  }
+
+  .qr-panel h2 {
+    font-size: 18pt;
+  }
+
+  .qr-image {
+    width: 2.95in;
+    padding: 0.1in;
+    border: 0;
+  }
+
+  .qr-url {
+    color: #000;
+    font-size: 9pt;
+    text-decoration: none;
   }
 }

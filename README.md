@@ -5,6 +5,7 @@ Static phone-first site for the wedding-day QR code.
 ## Files
 
 - `index.html` contains the page structure.
+- `qr.html` contains printable QR codes for the wedding site and public photo album.
 - `styles.css` contains the mobile-first theme.
 - `script.js` powers the itinerary/table tabs and live search.
 - `guests.js` contains the seating chart data.
