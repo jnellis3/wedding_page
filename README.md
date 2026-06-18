@@ -1,21 +1,9 @@
-# Jacob & Julia Wedding Day Site
+# Jacob & Julia Thank You Site
 
-Static phone-first site for the wedding-day QR code.
+Static phone-first GitHub Pages site with a post-wedding thank-you message.
 
 ## Files
 
-- `index.html` contains the page structure.
-- `qr.html` contains printable QR codes for the wedding site and public photo album.
+- `index.html` contains the public thank-you page.
+- `qr.html` contains printable QR codes for the thank-you site and public photo album.
 - `styles.css` contains the mobile-first theme.
-- `script.js` powers the itinerary/table tabs and live search.
-- `guests.js` contains the seating chart data.
-
-## Updating Seating
-
-Edit `guests.js` and replace the sample records:
-
-```js
-{ name: "Guest Name", table: "7", party: "Family Name" }
-```
-
-The search ignores capitalization, punctuation, and extra spaces. Guests can type first name, last name, or both.

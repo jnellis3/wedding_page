@@ -4,95 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8f5ef">
-    <title>Jacob & Julia | Wedding Day</title>
+    <title>Jacob & Julia | Thank You</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="app-shell">
-      <header class="site-header">
+    <main class="app-shell thank-you-shell">
+      <section class="thank-you-card" aria-labelledby="thank-you-title">
         <img class="hero-image" src="assets/wedding-hero.jpg" alt="Jacob and Julia, June 12, 2026">
-      </header>
 
-      <nav class="section-tabs" aria-label="Wedding day sections">
-        <button class="tab-button is-active" type="button" data-target="itinerary" aria-controls="itinerary" aria-selected="true">
-          Itinerary
-        </button>
-        <button class="tab-button" type="button" data-target="seating" aria-controls="seating" aria-selected="false">
-          Find My Table
-        </button>
-        <a class="tab-link" href="qr.html">
-          QR Codes
-        </a>
-      </nav>
-
-      <section class="content-section is-active" id="itinerary" aria-labelledby="itinerary-title">
-        <div class="section-heading">
-          <p class="eyebrow">Wedding Day</p>
-          <h2 id="itinerary-title">Itinerary</h2>
+        <div class="thank-you-copy">
+          <p class="eyebrow">Jacob &amp; Julia</p>
+          <h1 id="thank-you-title">Thank you Everyone for a Beautiful Wedding!</h1>
+          <p>
+            We are so grateful for the love, joy, and memories you shared with us.
+          </p>
         </div>
-
-        <ol class="timeline">
-          <li class="timeline-item">
-            <time datetime="2026-06-12T16:30">4:30 PM</time>
-            <div>
-              <h3>Ceremony</h3>
-              <p class="timeline-location">Second floor, Blue Room</p>
-              <p>Join us as we exchange vows.</p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2026-06-12T17:00">5:00 PM</time>
-            <div>
-              <h3>Cocktail Hour</h3>
-              <p class="timeline-location">Second floor, Blue Room</p>
-              <p>Drinks, hors d'oeuvres, and time to mingle.</p>
-              <p class="timeline-note">From 5:00-5:30 PM, stop by the video booth to share a few sentences of life advice for the bride and groom.</p>
-            </div>
-          </li>
-          <li class="timeline-item">
-            <time datetime="2026-06-12T18:00">6:00 PM</time>
-            <div>
-              <h3>Reception</h3>
-              <p class="timeline-location">Atrium</p>
-              <p>Dinner, dancing, and celebration until midnight.</p>
-              <ul class="timeline-details">
-                <li><strong>8:00 PM</strong> Dancing begins.</li>
-                <li><strong>9:00-10:00 PM</strong> Late-night pizza.</li>
-              </ul>
-            </div>
-          </li>
-        </ol>
-
-        <div class="event-details" aria-labelledby="details-title">
-          <h3 id="details-title">Other Details</h3>
-          <ul>
-            <li>Open bar is available until 9:00 PM. After 9:00 PM, spirits will be cash bar.</li>
-            <li>During dinner, wine will be served and the bar will remain open for any other drinks.</li>
-            <li>The bar area just outside the Atrium is available as a quieter space away from the music.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="content-section" id="seating" aria-labelledby="seating-title" hidden>
-        <div class="section-heading">
-          <p class="eyebrow">Seating Chart</p>
-          <h2 id="seating-title">Find Your Table</h2>
-        </div>
-
-        <form class="search-form" role="search">
-          <label for="guest-search">Guest name</label>
-          <input id="guest-search" name="guest-search" type="search" autocomplete="off" placeholder="Start typing your name">
-        </form>
-
-        <div class="results-status" id="results-status" aria-live="polite">
-          Start typing to look up your table.
-        </div>
-
-        <div class="results-list" id="results-list"></div>
       </section>
     </main>
-
-    <script src="guests.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
